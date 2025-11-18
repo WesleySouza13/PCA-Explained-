@@ -53,6 +53,18 @@ Prós:
 - Dados com ruidos podem ser "resumidos" sem componentes calculados com o PCA, dimuindo as incertezas dos dados
 - Dados que passam por reduçao de dimensionalidade, constumam ocupar menos espaço, ainda sim nao perdendo informaçoes
 
+Contras:
+
+Enxergo mais contras do que prós no PCA. Mas isso não é uma verdade absoluta, apenas uma escolha pessoal. Porém, irei defender minhas ideias:
+
+- O livro Hands-On Machine Learning with Scikit-Learn & TensorFlow cita um ponto discutível sobre a maldição da dimensionalidade.
+No exemplo deste projeto, construí um algoritmo que trabalha com uma matriz 3x3 bem estruturada, com clara multicolinearidade e característica quadrada, que foi reduzida para 2 componentes.
+Em um ambiente real, lidamos com dados sem padrões claros, com correlações muito fortes e, muitas vezes, com 200 dimensões diferentes. Nosso cérebro já tem dificuldade em visualizar algo acima de 3 dimensões, imagine 200.
+Portanto, resumindo: o PCA (e outros métodos de redução de dimensionalidade) não oferecem facilidade de explicabilidade, principalmente quando os dados possuem alta complexidade.
+- Ainda na questão da explicabilidade, por trabalharmos com dados resumidos, quando o modelo for treinado com esses componentes, não conseguiríamos identificar exatamente o que está influenciando cada decisão do modelo. Ou seja, não saberemos quais variáveis originais impactaram a inferência.
+- Existem outros meios de lidar com multicolinearidade além do PCA. Por exemplo, poderíamos usar modelos que não são sensíveis à multicolinearidade, como modelos baseados em árvores (árvores de decisão e alguns ensembles).
+
+De uma olhada no codigo PCA que criei nesse repositorio 
 
 
 
