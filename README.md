@@ -26,23 +26,8 @@ sabendo por definiçao que T(v) = λv é o teorema que explica os Autovalores e 
 A * v -  λ * v1 = 0, onde v1 se trata da matriz identidade 2x2
 
 teremos: 
-
 \[
-\left( A - \lambda 
-\begin{bmatrix}
-1 & 0 \\
-0 & 1
-\end{bmatrix}
-\right)
-\begin{bmatrix}
-X \\
-Y
-\end{bmatrix}
-=
-\begin{bmatrix}
-0 \\
-0
-\end{bmatrix}
+\det(A - \lambda I) = 0
 \]
 
 
