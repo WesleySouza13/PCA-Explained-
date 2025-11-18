@@ -26,9 +26,33 @@ sabendo por definiçao que T(v) = λv é o teorema que explica os Autovalores e 
 A * v -  λ * v1 = 0, onde v1 se trata da matriz identidade 2x2
 
 teremos: 
-\[
-\det(A - \lambda I) = 0
-\]
+
+deT (- λ + A * l)v = 0 --> equação caracteristica
+
+# Aplicaçao em PCA
+
+# O que é PCA?
+
+Principal Components Analysis (análise de componentes principais, em português) é um método matemático/estatístico que busca reduzir a dimensionalidade de dados. Geralmente, utilizamos o PCA para tratar dados que possuem forte multicolinearidade.
+
+O algoritmo de PCA trabalha com a matriz de covariância, a partir da qual são calculados os autovalores e autovetores.
+
+Com os autovalores calculados em mãos, é feita a soma de todas as variâncias (representadas pelos próprios autovalores) para, então, calcular o percentual de variância explicada pela soma total ou por cada componente principal calculado.
+
+o Algoritimo seleciona aqueles componentes que melhor explicam a variabilidade dos dados. 
+
+# O que o PCA nos retorna? 
+
+O PCA nos retorna componentes que são ortogonais entre si, ou seja, variáveis transformadas que não possuem correlação umas com as outras.
+
+# Prós e contras em utilizar o PCA
+
+Prós:
+
+- Se estivermos trabalhando com dados que possuem muita multicolinearidade, é um meio de cortar isso pela raiz
+- Dados com ruidos podem ser "resumidos" sem componentes calculados com o PCA, dimuindo as incertezas dos dados
+- Dados que passam por reduçao de dimensionalidade, constumam ocupar menos espaço, ainda sim nao perdendo informaçoes
+
 
 
 
