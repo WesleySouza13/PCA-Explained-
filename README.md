@@ -21,6 +21,29 @@ Por exemplo: uma matriz 3x3 satisfaz essa condição, porém uma 2x1 não.
 
 # Trabalhando com numeros
 
-sabendo por definiçao que T(v) = λv é o teorema que explica os Autovalores e Autovetores, aplicaremos sobre uma matriz A
+sabendo por definiçao que T(v) = λv é o teorema que explica os Autovalores e Autovetores, aplicaremos sobre uma matriz A 2x2:
 
-{{a11,a12},{a21,a22}}
+A * v -  λ * v1 = 0, onde v1 se trata da matriz identidade 2x2
+
+teremos: 
+
+\[
+\left( A - \lambda 
+\begin{bmatrix}
+1 & 0 \\
+0 & 1
+\end{bmatrix}
+\right)
+\begin{bmatrix}
+X \\
+Y
+\end{bmatrix}
+=
+\begin{bmatrix}
+0 \\
+0
+\end{bmatrix}
+\]
+
+
+       
